@@ -126,6 +126,7 @@
                             junkButtons.forEach((junkButton) => {
                                 const cardElement = junkButton.closest('.deckcard');
                                 if (cardElement) {
+                                    alert("Play fair click the button to blow up your card")
                                     cardElement.classList.add('exploding'); // Add explosion effect
                                     setTimeout(() => junkButton.click(), 2500); // Click junk button after animation
                                     removeContainerAfterAnimation(cardElement); // Remove the card's container after animation
